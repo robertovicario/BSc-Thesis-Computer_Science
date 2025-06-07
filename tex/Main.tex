@@ -1,0 +1,27 @@
+\documentclass[en]{Main}
+\usepackage{multicol}
+\usepackage{pdfpages}
+
+% -------------------------
+
+\begin{document}
+\includepdf{assets/front.pdf}
+
+% -------------------------
+
+\pagenumbering{roman}
+\tableofcontents
+\listoffigures
+\listoftables
+
+% -------------------------
+
+\pagenumbering{arabic}
+\include{chapters/0.tex}
+\include{chapters/1.tex}
+
+% -------------------------
+
+\pagenumbering{roman}
+\printbibliography
+\end{document}

@@ -1,0 +1,19 @@
+\chapter*{Abstract}
+
+Detecting stress in work environments represents an innovative approach to promoting employee health and well-being, especially in office settings. The use of machine learning offers an effective method to identify early signs of stress, enabling organizations to intervene promptly to mitigate associated risks. In particular, this study examines whether results obtained through unsupervised learning methods can be comparable to those from supervised approaches, as highlighted in the research \textit{"Exploring Unsupervised Machine Learning Classification Methods for Physiological Stress Detection"} by Iqbal et al. (2022), published in \textit{Frontiers in Medical Technology}.
+
+\vspace{0.5cm}
+
+The SWELL-KW dataset was used to extract data for training machine learning models to detect stress in employees. The experiment involved 25 participants at their workplace engaged in known tasks. Each individual was electronically monitored to acquire physical and physiological signals. The experiment categorized stress levels into three states: no stress, time pressure, and interruption—listed in increasing order of stress. The dataset authors extracted 34 features based on heart rate, which were divided into different categories: statistical, RR interval-related, and power sampling-based. The heart rate signals, obtained via electrocardiogram (ECG), were preprocessed and converted into numerical values by the dataset authors prior to publication. This may impact the research, as access to raw ECG signals before conversion into numerical data could be important.
+
+\vspace{0.5cm}
+
+Finally, the methodology is outlined, from the technologies used in the project to the machine learning methods applied to produce the results. Given the stress state division, a multiclass classification was conducted. The classifiers used—both supervised and unsupervised—include logistic regression, decision tree, random forest, k-means, Gaussian mixture, and BIRCH. Testing confirmed with accuracy, through cross-validation, that supervised learning is capable of making highly accurate predictions. For example, random forest achieved an accuracy of 81.73\%. On the other hand, unsupervised models did not perform significantly worse. Among them, k-means proved to be the most efficient, with a silhouette score of 0.2562. Supervised models were evaluated using confusion matrices, essential tools to assess how often the model makes incorrect predictions. For unsupervised models, evaluation was done via silhouette plot analysis, which offers a clear representation of the model’s ability to coherently cluster data.
+
+\vspace{0.5cm}
+
+These results confirm the findings of the initial paper, namely that both supervised and unsupervised models are comparable in classifying this dataset.
+
+\vspace{0.5cm}
+
+This thesis addressed the effectiveness of various machine learning approaches in identifying stress in office work environments. The results highlighted important conclusions about the use of unsupervised machine learning for stress detection as opposed to the traditional supervised methods.
